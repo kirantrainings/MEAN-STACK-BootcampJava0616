@@ -1,0 +1,105 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+
+    <table class="tblBorder">
+        <tr>
+            <td>
+                <div class="divBorderTitle">
+                    <p style="text-align: center; font-weight: bold;">
+                        Form Below
+                        <p>
+                </div>
+                <div class="divBorderForm">
+                    <form id="formPersonalDetails">
+                        <label>First Name</label>
+                        <input type="text" name="inputFirstName" class="inptText">
+                        <br>
+                        <label>Last Name</label>
+                        <input type="text" name="inputLastName" class="inptText">
+                        <br>
+                        <textarea name="txtArea" cols="40" rows="7" style="margin:4px 0 0 2px">Lets put something as default value</textarea>
+
+                        <p><strong>Please select your gender</strong></p>
+                        Male
+                        <input type="radio" name="gnder" value="male">
+                        <br> Female
+                        <input type="radio" name="gnder" value="female">
+                        <br> Other
+                        <input type="radio" name="gnder" value="other">
+                        <br>
+
+                        <fieldset>
+                            <legend>Lemme group your person preferences separately</legend>
+                            <p><strong>I want to know your hobbies</strong></p>
+                            Travelling
+                            <input type="checkbox" value="travelling" name="hobbies"> Partying
+                            <input type="checkbox" value="partying" name="hobbies"> Reading
+                            <input type="checkbox" value="reading" name="hobbies">
+                            <br>
+
+                            <p><strong>let know your current expression</strong></p>
+                            <select>
+                                <option value="smile">Smile</option>
+                            </select>
+                        </fieldset>
+
+                        <button type="submit" style="margin-top:4px">mySubmit</button>
+                    </form>
+                </div>
+
+            </td>
+            <td>
+                <div class="divBorderTitle">
+                    <p style="text-align: center; font-weight: bold;">
+                        Image and list
+                        <p>
+                </div>
+                <div class="divBorderForm">
+                    <image src="image.png" style="height: 112px;"></image>
+                    <p style="font-style: italic;">
+                        <mark>see the list of languages and frameworks as their sub categories</mark>
+                    </p>
+                    <p style="font-style: italic;">Frameworks also have categories</p>
+
+                    <ul>
+                        <li>PHP
+                            <ul>
+                                <li>
+                                    YII Framework
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Javascript
+                            <ul>
+                                <li>Angularjs</li>
+                                <li>Backbonejs
+                                    <ul>
+                                        <li>
+                                            Marionettejs
+                                        </li>
+                                        <li>
+                                            Thorax
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Python
+                            <ul>
+                                <li>Django</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>

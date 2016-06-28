@@ -1,0 +1,39 @@
+body {
+    background: -webkit-linear-gradient(bottom, rgb(175, 193, 214), rgba(255, 0, 0, 1));
+    /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom, rgb(175, 193, 214), rgba(255, 0, 0, 1));
+    /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom, rgb(175, 193, 214), rgba(255, 0, 0, 1));
+    /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to top, white, white, white, rgb(206, 223, 245), rgb(171, 188, 239));
+    /* Standard syntax (must be last) */
+}
+
+#mainDiv {
+    width: 64%;
+    margin: 0 0 0 19%;
+    border: 2px dotted grey;
+}
+
+#menuDiv {
+    float: left;
+    width: 16%;
+    border: 2px solid #a29e9e;;
+    margin-left: 3%;
+}
+
+#contentDiv {
+    border: 2px solid #a29e9e;;
+    float: left;
+    width: 76%;
+    margin-left: 15px;
+    padding-top: 5px;
+}
+
+#clearFix:after {
+    content: "";
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}

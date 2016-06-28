@@ -1,0 +1,23 @@
+.tblBorder{
+    border: 1px solid grey;
+}
+
+.divBorderTitle{
+    border: 1px solid grey;
+}
+
+.divBorderForm{
+    border: 1px solid grey;
+    margin: 4px 0 0 0;
+    height: 506px;
+}
+
+.inptText{
+    margin: 4px 0 0 5px;
+    width: 61%;
+}
+
+mark{
+    background-color: rgb(242, 116, 72);
+    color: white;
+}
