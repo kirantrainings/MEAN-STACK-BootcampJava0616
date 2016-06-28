@@ -1,0 +1,46 @@
+/*table {
+    
+    border: 1px solid black;
+    padding: 0.2px;
+    margin: 2px;
+    
+}
+
+th{
+    border: 1px solid black;
+    padding: 0.2px;
+    margin: 25px;
+}
+
+td{
+    border: 1px solid black;
+    padding: 0.2px;
+    margin: 2px;
+}*/
+
+.tblmanu {
+    border: 1px solid black;
+    padding: 0.2px;
+    margin: -1px;
+    
+}
+
+img::after {
+    content:"";
+    display:block;
+    margin-top: 10px;
+    
+}
+
+.elmanu {
+    margin: 1px;
+    border-radius: 4px;
+}
+/*
+ rgb(236, 122, 64);
+*/
+
+tr.top td { border-top: thin solid black; }
+tr.bottom td { border-bottom: thin solid black; }
+tr.row td:first-child { border-left: thin solid black; }
+tr.row td:last-child { border-right: thin solid black; }
