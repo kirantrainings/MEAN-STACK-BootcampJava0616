@@ -1,5 +1,7 @@
-
-table,tr,td{
+p{
+    border: 2px solid #c3bfbf;
+}
+table,td{
     border: 2px solid #c3bfbf;
     font-size: 18px;
 }
@@ -12,4 +14,8 @@ table,tr,td{
 #lblText{
     color: white;
     background-color: coral;
+}
+
+textarea{
+    border-radius: 5px;
 }
