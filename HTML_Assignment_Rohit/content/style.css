@@ -1,0 +1,15 @@
+
+table,tr,td{
+    border: 2px solid #c3bfbf;
+    font-size: 18px;
+}
+
+.row-header{
+    font-weight: bold;
+    text-align: center;
+}
+
+#lblText{
+    color: white;
+    background-color: coral;
+}

@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <title>Assignment 1</title>
+        <link rel="stylesheet" href="content/style.css">
+    </head>
+    <body>
+        <table>
+            <tr class="row-header">
+                <td>Form Below</td>
+                <td>Image and List</td>
+            </tr>
+            <tr>
+                <td>
+                    <form>
+                        <label id="lblFirstName">First Name</label>
+                        <input type="text" id="txtFirstName"><br>
+                        <label id="lblLastName">Last Name</label>
+                        <input type="text" id="txtLastName"><br>
+                        <textarea name="message" rows="10" cols="40" >Lets put something as default value</textarea><br><br>
+                        <label style="font-weight:bold">Please select your gender</label><br>
+                        <label id="lblGender">Male:</label>
+                        <input type="radio" id="rdbGenderMale" name="gender" value="M"><br>
+                        <label id="lblGender">Female:</label>
+                        <input type="radio" id="rdbGenderFemale" name="gender" value="F"><br>
+                        <label id="lblGender">Other:</label>
+                        <input type="radio" id="rdbGenderOther" name="gender" value="O"><br>
+                        <fieldset>
+                            <legend>Lemme group your person preferences separately</legend>
+                            <label id="lblHobbies" style="font-weight:bold">I want to know your hobbies</label><br>
+                            <label id="lblTravelling">Travelling</label>
+                            <input type="checkbox" id="chkTravelling" value="Travelling">
+                            <label id="lblPartying">Partying</label>
+                            <input type="checkbox" id="chkPartying" value="Partying">
+                            <label id="lblReading">Reading</label>
+                            <input type="checkbox" id="chkReading" value="Reading"><br><br>
+                            <label style="font-weight:bold">Lets know your current expression</label><br>
+                            <select id="ddlExpression">
+                                <option value="smile">Smile</option>
+                                <option value="angry">Angry</option>
+                                <option value="sad">Sad</option>
+                                <option value="Irritated">Irritated</option>
+                            </select>
+                        </fieldset>
+                        <input type="submit" id="btnSubmit" value="mySubmit">
+                    </form>
+                </td>
+                    
+                <td valign="top">
+                   <img  src="content/Palette.png" alt="Palette" width="150px" height="150px"><br><br>
+                   <label id="lblText">see the list of languages and frameworks as their sub categories.</label><br>
+                   <label>Framework also have categories</label>
+                    <ul>
+                        <li>PHP</li>
+                            <ul>
+                                <li>YII Framework</li>
+                            </ul>
+                        <li>Javascript</li>
+                            <ul>
+                                <li>AngularJS</li>
+                                <li>BackboneJS</li>
+                                    <ul>
+                                        <li>Marionettejs</li>
+                                        <li>Thorax</li>
+                                    </ul>
+                            </ul>
+                        <li>Python</li>
+                            <ul>
+                                <li>Django</li>
+                            </ul>
+                    </ul>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
