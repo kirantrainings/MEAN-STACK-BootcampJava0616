@@ -1,0 +1,17 @@
+body{
+    background-color: bisque;
+}
+
+label{
+    font-size: 20px;
+}
+
+.lbl-small-font{
+    font-size: 12px;
+}
+
+.lbl-large-font{
+    font-size: 20px;
+    font-weight: 100;
+}
+

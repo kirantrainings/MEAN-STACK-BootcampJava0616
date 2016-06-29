@@ -1,0 +1,74 @@
+<DOCTYPE! html>
+<html>
+<head>
+</head>
+<body>
+ <table border="1">
+    <tr>
+        <td align='center'><b>Form Below</b></td>
+        <td align='center'><b>Image and list</b></td>
+    </tr>
+
+    <tr>
+        <td>
+            
+            <form>
+                <label id="lblFirstName">First Name</label><input type="text" name="firstname" id="txtFirstName"><br/>
+                <label id="lblLastName">Last Name</label><input type="text" name="lastname" id="txtLastName"><br/>
+                <textarea name="message" rows="10" cols="30">Lets put some thing as default values
+                </textarea><br/><br/>
+                <label id="lblGender">Please select your gender</label><br/>
+                <input type="radio" name="gender" value="male" checked> Male<br/>
+                <input type="radio" name="gender" value="female"> Female<br/>
+                <input type="radio" name="gender" value="other"> Other<br/>
+                <fieldset>
+                    <legend>Lemme group your person preferences seperately</legend>
+                        <label id="lblHobbies">I want to know your hobbies</label><br/>
+                        <label id="lblTravelling">Travelling</label><input type="checkbox" name="Travelling" value="Travelling">
+                        <label id="lblPartying">Partying</label><input type="checkbox" name="Partying" value="Partying">
+                        <label id="lblReading">Reading</label><input type="checkbox" name="Reading" value="Reading"><br/><br/>
+                        <label id="lblExpression">Lets know your current expression</label><br/>
+                        <select id="expression">
+                          <option value="smile">Smile</option>
+                          <option value="laugh">Laugh<selected> </option>
+                          <option value="suprise">Suprise</option>
+                          <option value="anger">anger</option>
+                        </select>
+                </fieldset>
+                <input type="submit" value="mySubmit">
+                
+            </form>
+        </td>
+        
+        <td>
+                <img src="image1.jpg" style="width:300px;height=300px"><br/>
+                <label style="background-color:orange;">See the list of Languages and frameworks as their sub categories</label><br/>
+                <label><i>Frameworks also have catogories</i></label>
+                <ul style="list-style-type:disc">
+                  <li>PHP
+                    <ul style="list-style-type:circle">
+                         <li>YII Framework</li>
+                      </ul>
+                    </li>
+                  <li>Java Script
+                    <ul style="list-style-type:circle">
+                        <li>Angular JS</li>
+                        <li>Backbone JS
+                            <ul style="list-style-type:square">
+                            <li>Martonettejs</li>
+                            <li>Thorax</li>
+                            </ul>
+                        </li>
+                      </ul>
+                    </li>
+                  <li>Phython
+                    <ul style="list-style-type:circle">
+                            <li>Django</li>
+                      </ul>
+                    </li>
+                </ul>
+        </td>    
+    <tr>
+</table>
+</body>
+<html>
