@@ -1,0 +1,121 @@
+<!doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="content/style.css">
+</head>
+
+<body>
+
+    <table border='1'>
+        <tr>
+            <td>
+                <div  class="thead" align="center"><b>Form Below</b>
+                </div>
+                <div>
+                    <form>
+                        <div>
+                            <label>First Name</label>
+                            <input type="text" class="textbox" size="30">
+                        </div>
+                        <div>
+                            <label>Last Name</label>
+                            <input type="text" class="textbox" size="30">
+                        </div>
+                        <div>
+                            <textarea rows="10" cols="40" placeholder="lets put something as default value"></textarea>
+                        </div>
+                        <div>
+                            <label class="lbl-medium">Please select your gender</label>
+                        </div>
+                        <div>
+                            <label>Male:</label>
+                            <input type="radio" name="gender">
+                        </div>
+                        <div>
+                            <label>Female:</label>
+                            <input type="radio" name="gender">
+                        </div>
+                        <div>
+                            <label>Other:</label>
+                            <input type="radio" name="gender">
+                        </div>
+                        <div>
+                            <fieldset>
+
+                                <legend>Lemme group your person preferences separately</legend>
+                                <div></div>
+                                <label class="lbl-medium" class="lbl-medium">I want to know your hobbies</label>
+                                <div></div>
+                                <label>Traveling</label>
+                                <input type="checkbox" name="hobbies">
+                                <label>Partying</label>
+                                <input type="checkbox" name="hobbies">
+                                <label>Reading</label>
+                                <input type="checkbox" name="hobbies">
+                                <br><br>
+                                <div>
+                                    <label class="lbl-medium">Lets know your current expression</label>
+                                </div>
+                                <div>
+                                    <select id="expression">
+                                        <option value="Smile">Smile</option>
+                                        <option value="Sad">Sad</option>
+                                        <option value="Blessed">Blessed</option>
+                                        <option value="Amazed">Amazed</option>
+                                    </select>
+                                </div>
+                            </fieldset>
+                        </div>
+                        <input type="submit" value="mySubmit">
+                    </form>
+                </div>
+            </td>
+
+
+
+            <td class="col2body">
+
+                <div class="thead" align="center"><b>Image and List</b>
+                </div>
+
+                <div>
+
+                    <img src="./content/graphic_design_idea.jpg">
+                    <br>
+                    <mark>see the list of languages and frameworks as their sub categories.</mark>
+                    <br>
+                    <i>Framweworks also have categories</i>
+                    <ul style="list-style-type:circle,">
+                        <li>PHP</li>
+                        <ul>
+                            <li>YII Framework</li>
+                        </ul>
+                        <li>JavaScript</li>
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>BackboneJS</li>
+                            <ul style="list-style-type:square,">
+                                <li>Marionettejs</li>
+                                <li>Thorax</li>
+                            </ul>
+                        </ul>
+
+                        <li>Python</li>
+                        <ul>
+                            <li>DJango</li>
+                        </ul>
+
+                    </ul>
+
+
+                </div>
+            </td>
+
+        </tr>
+    </table>
+
+</body>
+
+
+</html>

@@ -1,0 +1,31 @@
+.thead  {
+   border-style: ridge;   
+}
+ 
+.textbox    { 
+    -webkit-border-radius: 5px; 
+    -moz-border-radius: 5px; 
+    border-radius: 5px; 
+    border: 1px solid #848484; 
+    
+ } 
+ 
+.col2body   {
+    
+    vertical-align: top;
+}
+
+.lbl-medium {
+    font-weight: bold;
+}
+
+mark {
+    color: white;
+    font-style: italic;
+    background-color: orange;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
