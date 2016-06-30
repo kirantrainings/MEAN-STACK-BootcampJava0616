@@ -1,0 +1,44 @@
+
+table {
+    border: 2px solid gray;
+    margin: auto 100px;
+    background-color: lightblue;
+    border-collapse: separate;
+}
+td {
+    border: 1px solid black;
+    margin-top: 0px;
+    vertical-align: top;
+}
+
+
+.heading {
+    border: 2px solid red;
+    margin-top: 0px;
+}
+
+div {
+    background-color: orange;
+    font-style: italic;
+    color: white;
+    
+ 
+}
+p {
+    font-style: italic;
+    font-size: 14px;
+}
+textarea {
+    resize: none;
+    display: block;
+    border-radius: 4px;
+}
+.names {
+    display: block;
+}
+label {
+    font-weight: bold;
+}
+ul li {
+    font-weight: bold;
+}
