@@ -1,0 +1,55 @@
+body{
+
+background-image: url(images/banner.jpg);
+background-repeat: repeat-x;
+
+}
+
+.wrapper {
+    font-family: cambria;
+    border: 2px solid #585858;
+    margin: auto;
+    width: 960px;
+    
+    
+    
+}
+
+.main {
+
+border: 2px solid black;
+float: right;
+width: 700px;
+margin: 0 10px 0 5px;
+padding-top: 5px;
+padding-left:5px;
+
+}
+
+
+
+.menu {
+
+float:left;
+width:200px;
+border: 2px solid #585858;
+margin-left: 20px;
+
+    
+
+
+
+}
+
+.copyright {
+margin-left: 400px;
+}
+
+.banner{
+   
+   width: 950px;
+   
+}
+
+
+
