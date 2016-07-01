@@ -1,0 +1,21 @@
+Difference between innerHtml and outerHtml?
+Ans: We can change HTML containment elements on the fly by using either innerHTML or outerHTML. But the difference is that when innerHTML is used the complete content of the container, not including the element tag pair itself is changed. Where as, using outerHTML the complete container, including the element tag pair itself is changed.
+
+Example:
+
+<html>
+
+<body onload="demo()">
+    <p id="t1"> text</p>
+    <div id="theDiv">
+        <p>some more text </p>
+    </div>
+    <SCRIPT>
+        function demo() {
+            alert(document.getElementById("t1").innerHTML);
+            alert(document.getElementById("theDiv").outerHTML);
+        }
+    </SCRIPT>
+</body>
+
+</html>
