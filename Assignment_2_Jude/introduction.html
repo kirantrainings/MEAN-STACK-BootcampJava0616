@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!---Change values by button click ! --->
+<html>
+
+    <head> </head>
+    
+    <body>
+    
+           
+        <table>
+            <tr><b>Change values by button click !</b></tr>
+            <tr><td>&nbsp;</td></tr>
+      <tr><td><label id="lblFirstName">First Name : </label></td> 
+        <td><input type="text" id="firstName" required></td> </tr> 
+         <tr><td>&nbsp;</td></tr>
+      <tr><td>  <label id="lblLastName">Last Name : </label></td>
+        <td><input type="text" id="lastName" required></td> </tr> 
+         <tr><td>&nbsp;</td></tr>
+      <tr>  <td> <label id="lblAge">Age : </label></td>
+       <td> <input type="text" id="age" required></td> </tr>   
+            <tr><td>&nbsp;</td></tr>
+       <tr>  <td><label id="lblGender">Gender : </label></td>
+       <td> <input type="text" id="gender" required></td> </tr>  
+          <tr><td>&nbsp;</td></tr>
+          <td>  <button onclick="changeValue()">Change</button> 
+       </table>     
+        <script>
+        
+            function changeValue(){
+                
+                document.getElementById("firstName").value = "Jude";
+                document.getElementById("lastName").value = "Mariarajan";
+                document.getElementById("age").value = "29";
+                document.getElementById("gender").value = "Male";
+                
+            }
+            
+        </script>    
+            
+        
+        
+    </body>
+    
+</html>

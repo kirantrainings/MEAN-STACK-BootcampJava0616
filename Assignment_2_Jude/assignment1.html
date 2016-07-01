@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<body style="font-size:140%;">
+
+<p>Working with Strings</p>
+    
+<button onclick="findA()">Find the 'A'</button>    
+<div>
+<label>No of "A" : </label>
+<label id="string" style="font-color:green;"></label>
+</div>
+ <br>
+<button onclick="reverseString()">Find the Reverse String</button>
+ <div>   
+<label>Reverse String : </label>
+<label id="reverse"></label>
+</div>
+  <br>
+    <button onclick="palindromeString()">Find the Reverse String</button>
+ <div>   
+<label>Pallindrom String : </label>
+<label id="palindrome"></label>
+</div>
+  <br>
+    <button onclick="findTheIndex()">Find the Reverse String</button> 
+ <div>   
+<label>Find the Index : </label>
+<label id="array"></label>
+</div>
+
+
+<script>
+function findA() {
+    var str = "South America, North America, Asia";
+    var matches = str.match(/A/g);
+    document.getElementById("string").innerHTML = matches.length;
+    
+}
+    
+    
+function reverseString() {
+    
+var str = "South America, North America, Asia";
+var rvs = str.split('').reverse().join('');   
+document.getElementById("reverse").innerHTML = rvs;
+    
+}    
+    
+function palindromeString(){
+          var str = "South America, North America, Asia";
+          var p = str.split('').reverse().join('') ? true : false;
+        document.getElementById("palindrome").innerHTML = p
+          
+} 
+    
+
+function findTheIndex(){    
+var name = ["John", "James", "Kiran", "Krishna" , "Robert"];
+    var index = name.indexOf("Kiran");
+document.getElementById("array").innerHTML = index
+
+}
+    
+</script>
+
+</body>
+</html>
