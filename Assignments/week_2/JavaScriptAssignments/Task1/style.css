@@ -1,0 +1,18 @@
+body {
+    background-color: burlywood;    
+}
+
+b  {
+    margin-left: 80px;
+    font-size: 20px;
+}
+
+table, td, th {
+    margin-left: 80px;
+    margin-top: 20px;
+    border: 1px;
+    border-style: groove;
+    padding: 5px;
+    border-color: brown;
+    
+}
