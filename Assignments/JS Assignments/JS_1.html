@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <label id="str">South America, North America, Asia</label><br/>
+   
+    
+<button onclick="myFunction()">Count A</button>    
+<div>
+<label>No of "A" : </label> <label id="string"></label>
+</div>
+
+<button onclick="reverseString()">reverse</button>
+ <div>   
+<label>Reverse String : </label>
+     
+     <label id="reverse"></label><br/>     
+</div>
+
+<button onclick="palindrome()">PalindromeCheck</button>
+ <div>   
+<label>Palindrome : </label>
+     
+     <label id="palindromecheck"></label><br/>     
+</div>
+    
+    <p id="array">["John", "James", "Kiran", "Krishna" , "Robert"]</p>   
+    <button onclick="getindex()">Index of Kiran</button>
+ <div>   
+<label>Index of Kiran : </label>
+<label id="index"></label>
+</div>
+
+
+<script>
+function myFunction() {
+    
+    document.getElementById("string").innerHTML = (document.getElementById("str").innerHTML.match(/A/g)).length;
+    
+}
+    
+function reverseString() {
+    
+    document.getElementById("reverse").innerHTML = document.getElementById("str").innerHTML.split('').reverse().join('');
+    
+}    
+    
+function palindrome() {
+  document.getElementById("palindromecheck").innerHTML = (document.getElementById("str").innerHTML == document.getElementById("str").innerHTML.split('').reverse().join(''));
+ 
+}     
+       
+function getindex() {
+  
+    var array = ["John", "James", "Kiran", "Krishna" , "Robert"];
+//  document.getElementById("index").innerHTML = document.getElementById("array").innerHTML.indexOf("Kiran");
+    document.getElementById("index").innerHTML = array.indexOf("Kiran");
+     
+}     
+  
+</script>
+
+</body>
+</html>

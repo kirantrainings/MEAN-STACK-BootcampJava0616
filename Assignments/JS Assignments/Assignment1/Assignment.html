@@ -1,0 +1,77 @@
+<DOCTYPE! html>
+<html>
+
+    <head>
+        <title>Assignment1</title>
+    </head>
+    
+    <body>
+    
+        <div>
+            <table>
+                <tr>
+                    <td>
+                        <div>
+                        <label id = "lblfirstname">First Name</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <input type="text" id="fname" name="firstname">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                        <label id = "lbllastname">Last Name</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <input type="text" id="lname" name="lastname">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                        <label id = "lblage">Age</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <input type="number" id="age" name="age">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div>
+                            <label id = "lblgender">Gender</label>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                        <input type="text" id="gender" name="gender">
+                        </div>
+                    </td>
+                </tr>                
+            </table>
+        </div>
+        
+        <button onclick="myFunction()">Change</button>    
+        
+        <script>
+            function myFunction() {
+                document.getElementById("fname").value = "First name";
+                document.getElementById("lname").value = "Last name";
+                document.getElementById("age").value = "20";
+                document.getElementById("gender").value = "Gender";
+            } 
+        
+        </script>
+        
+    </body>
+    
+</html>
