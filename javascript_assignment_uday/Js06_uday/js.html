@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+
+</head>
+
+<body>
+
+<p> <label><b> Num of ocurences of "A" in "South America, North America, Asia" :</b> </label>
+<label id = "occurence" ></label>
+</p>
+
+<button onclick = "occurencesOfA()">Click me for 1st answer</button >
+
+
+<p> <label><b> Reversing the String "South America, North America, Asia":</b> </label>
+<label id = "reversing" ></label></p>
+
+
+<button onclick = "reverseTheString()">Click me for 2nd answer</button >
+
+
+<p> <label><b> Checking wether "South America, North America, Asia" is palindrome or not :</b> </label>
+<label id = "palindrome" ></label></p>
+
+
+<button onclick = "palindromeChecker()">Click me for 3rd answer</button >
+
+
+<p> <label><b> Index of "Kiran" in the array ["John", "James", "Kiran", "Krishna" , "Robert"] :</b> </label>
+<label id = "index" ></label></p>
+
+
+<button onclick = "identifyingIndex()">Click me for 4th answer</button >
+
+
+<script>
+var arr = ["John", "James", "Kiran", "Krishna" , "Robert"];
+var str =  "South America, North America, Asia";
+
+function reverseTheString(){
+ var revString =  str.split('').reverse().join('');
+ document.getElementById("reversing").innerHTML = revString;
+}
+
+
+function palindromeChecker(){
+  var check = str.split('').reverse().join('');
+  
+  document.getElementById("palindrome").innerHTML = (check == str ? true : false );
+}
+
+function occurencesOfA(){
+
+document.getElementById("occurence").innerHTML = str.length - str.replace(/A/g,"").length;
+}
+
+function identifyingIndex(){
+document.getElementById("index").innerHTML = arr.indexOf("Kiran");
+}
+</script>
+
+</body>
+</html>
