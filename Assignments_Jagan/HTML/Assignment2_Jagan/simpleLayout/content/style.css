@@ -1,0 +1,51 @@
+body {
+    background-color: azure;
+}
+
+.main {
+    border: 2px solid #585858;
+    float: right;
+    width: 700px;
+    margin-right: 15px;
+    padding-top: 5px;
+}
+.main h3 {
+    text-align: center;
+}
+
+.menu {
+    float: left;
+    width: 200px;
+    border: 2px solid #585858;
+    margin-left: 20px;
+}
+
+.wrapper {
+    border: 2px dotted black;
+    width: 960px;
+    margin-left: 160px;
+    height: auto;
+    padding-bottom: 5px;
+}
+
+.banner {
+    margin-top: 0px;
+    width: 960px;
+}
+
+.menu ul li {
+    list-style: none;
+    display: block;
+    
+}
+
+  h2 {
+    text-align: center;
+}
+
+.copyright {
+    clear: both;
+    text-align: center;
+    border-top: 1px dotted gray;
+    border-bottom: 1px dotted gray;
+    
