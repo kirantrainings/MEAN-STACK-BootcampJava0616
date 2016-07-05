@@ -48,7 +48,6 @@ function buildOptionTag(country){
     getControls().countries.appendChild(optionTag);
 }
 
-/*
 function buildStates(){
     if(getControls().countries.value == "US")
         var stateList = lookUpStates().usStates;
@@ -57,15 +56,13 @@ function buildStates(){
     for(var i=0;i<stateList.length;i++){
         buildStateOptionTag(stateList[i]);
     }
-}*/
+}
 
-/*
 function buildStateOptionTag(state){
     var stateOptionTag = document.createElement("option");
     stateOptionTag.value = state.abbreviation;
     stateOptionTag.textContent = state.name;
     getControls().states.appendChild(stateOptionTag);
 }
-*/
 
 initPage();

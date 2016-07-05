@@ -1,3 +1,16 @@
+/*var validateUser = "Global variable";
+
+function understandLexicalScope(){
+    var validateUser = "Rohit Kavoori";
+    
+    console.log(validateUser);
+}
+
+understandLexicalScope();
+
+console.log(validateUser);*/
+
+
 function validators(){
     var numbersOnly, alphabetsOnly, alphaNumerics;
     
