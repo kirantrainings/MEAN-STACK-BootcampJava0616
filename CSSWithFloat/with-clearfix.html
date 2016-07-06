@@ -6,17 +6,23 @@
             margin: 0;
             border: 3px solid green;
         }
-        /*.clear-fix:before,
-        .clear-fix:after{
-		content: "";
-		display:table;
-	}
-	.clear-fix:after{ clear:both; }
-	.clear-fix{
-		zoom:1;  IE 6 and 7 fix
-	}*/
+        
+        .clear-fix:before,
+        .clear-fix:after {
+            content: "";
+            display: table;
+        }
+        
+        .clear-fix:after {
+            clear: both;
+        }
         
         .clear-fix {
+            zoom: 1;
+            IE 6 and 7 fix
+        }
+        
+        * .clear-fix {
             clear: both;
         }
         
@@ -40,10 +46,16 @@
 </head>
 
 <body>
+    <!-- <div id="outer">
+
+        <img style="float:left" src="jewel.jpg">
+        <img style="float:right" src="jewel.jpg">
+        <div style="clear: both"></div>
+    </div>-->
     <div id="outer" class="clear-fix">
         The content is part of outer div
         <img class="float-left" src="jewel.jpg">
         <img class="float-right" src="jewel.jpg">
-        <div class="clear-fix"></div>
+
     </div>
 </body>
