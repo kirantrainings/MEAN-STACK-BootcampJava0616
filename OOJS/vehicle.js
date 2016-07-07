@@ -1,9 +1,15 @@
 (function () {
 
     var vehicle = function () {
+        var nooftyres = "";
         this.vehicleType = "";
         this.engineCC = "";
-        this.numberOfTyres = "";
+        this.numberOfTyres = function (data) {
+            if (data) {
+                nooftyres = data;
+            }
+            return nooftyres;
+        }
     };
 
     function buildVehicle() {
@@ -12,7 +18,8 @@
         vehicle.prototype.fuelType = "";
         bike.vehicleType = "Two Wheeler";
         bike.engineCC = 200;
-        bike.numberOfTyres = 2;
+        bike.numberOfTyres(2);
+
         bike.numberOfGears = 6;
         bike.fuelType = "petrol";
 
