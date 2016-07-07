@@ -1,0 +1,66 @@
+<!Doctype html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css"> </head>
+
+<body> <b>Registration form</b>
+    <br><p>* are required fields</p>
+    <form action = "welcome.html">
+    <table>
+        <tr>
+            <td>First Name<sup>*</sup></td>
+            <td>
+                <input type="text" id="fname" placeholder="alphabets only" required> </td>
+        </tr>
+        <tr>
+            <td>Last Name<sup>*</sup></td>
+            <td>
+                <input type="text" id="lname" placeholder="alphabets only"required> </td>
+        </tr>
+        <tr>
+            <td>Address Line 1<sup>*</sup></td>
+            <td>
+                <input type="text" id="addrLine1" placeholder="Street #, Name, Apt / Suite"required> </td>
+        </tr>
+        <tr>
+            <td>Address Line 2<sup>*</sup></td>
+            <td>
+                <input type="text" id="addrLine2" placeholder="City"required> </td>
+        </tr>
+        <tr>
+            <td>Phone Number<sup>*</sup></td>
+            <td>
+                <input type="text" id="phoneNum" placeholder="numbers only"required> </td>
+        </tr>
+        <tr>
+            <td>Country<sup>*</sup></td>
+            <td>
+                <select id="ddlCountry" required> </select>
+            </td>
+        </tr>
+        <tr>
+            <td>State<sup>*</sup></td>
+            <td>
+                <select id="ddlState" required> </select>
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="checkbox" id="chkTerms"required>I Agree Terms and Conditions<sup>*</sup></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>
+                <input type="submit" value="Register"> </td>
+        </tr>
+    </table>
+    </form>
+    <script src="data.js"></script>
+    <script src="loadPage.js"></script>
+    <script src="validations.js"></script>
+    <script src="register.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,35 @@
+body {
+    background-color: brown;
+}
+
+b {
+    color: floralwhite;
+    margin-left: 80px;
+    font-size: 30px;
+}
+
+p {
+    color: floralwhite;
+    margin-left: 80px;
+}
+
+table,
+tr,
+td {
+    font-family: monospace;
+    color: firebrick;
+    margin-left: 80px;
+    font-weight: bold;
+    font-size: 20px;
+    align-content: center;
+    background-color: darkgray;
+}
+
+input {
+    font-size: 15px;
+}
+
+select,
+option {
+    font-size: 15px;
+}
