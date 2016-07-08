@@ -6,24 +6,26 @@ function controls() {
 }
 
 
-function buildCountries() {  
+function buildCountries() {
     var countryList = lookUpData().countries;
     for (var i = 0; i < countryList.length; i++) {
         buildOptionTag(countryList[i]);
     }
 }
 
-function buildStates() {  
-    var usList = lookUpUsStates().states;
-    return {
-        us: function(){
-            for (var i = 0; i < usList.length; i++) {
-            buildStatesOptionTag(usList[i]);
-                console.log(usList);
+function buildStates(country) {
+    if (country == "US") {
+        var usList = lookUpUsStates().states;
+        return {
+            us: function () {
+                for (var i = 0; i < usList.length; i++) {
+                    buildStatesOptionTag(usList[i]);
+                    console.log(usList);
+                }
             }
         }
     }
-    
+
 }
 
 function buildStatesOptionTag(states) {
@@ -34,24 +36,24 @@ function buildStatesOptionTag(states) {
     console.log(optionTag);
 }
 
-function bindStates(){
+/*function bindStates() {
     var control = controls().countries;
     var states = buildStates();
-    control.addEventListener("click", function(){
+    control.addEventListener("click", function () {
         var options = control.querySelectorAll("option");
         var count = options.length;
-        if(typeof(count) == "undefined" || count<1 ){
+        if (typeof (count) == "undefined" || count < 1) {
             buildCountries();
         }
-        
+
     });
-    control.addEventListener("change", function(){
-        if(control.value == "United States"){
-            states.us;
+    control.addEventListener("change", function () {
+        if (control.value == "United States") {
+            buildStates();
         }
-        
+
     });
-}
+}*/
 
 function buildOptionTag(country) {
     var optionTag = document.createElement("option");
@@ -60,9 +62,18 @@ function buildOptionTag(country) {
     controls().countries.appendChild(optionTag);
 }
 
+function bindEvents() {
+    var countryDdl = controls().countries;
+    countryDdl.addEventListener("change", function () {
+        buildStates(this.value).us();
+    });
+}
+
 function initializePage() {
     buildCountries();
-    bindStates();
+    //bindStates();
+    bindEvents();
+
 }
 
 initializePage();
