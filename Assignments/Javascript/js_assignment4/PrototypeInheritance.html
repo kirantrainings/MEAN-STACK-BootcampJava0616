@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+
+var animal = function{
+    eats: true 
+}
+
+var rabbit = function{
+    jumps: true 
+}
+
+rabbit.__proto__ = animal  // inherit
+
+alert(rabbit.eats) // true
+
+    </script>
+</body>
+</html>

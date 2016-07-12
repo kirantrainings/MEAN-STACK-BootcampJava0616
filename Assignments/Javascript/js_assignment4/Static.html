@@ -1,0 +1,12 @@
+class StaticMethodCall {
+    static staticMethod1() {
+        console.log("Static method has been called");
+    }
+    static StaticMethod2() {
+        console.log(this.staticMethod1() + " from another static method");
+    }
+}
+StaticMethodCall.staticMethod(); 
+
+
+StaticMethodCall.StaticMethod2(); 

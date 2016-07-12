@@ -1,0 +1,21 @@
+function Person(name, secret) {
+    // public
+    this.name = name;
+
+    // private
+    var secret = secret;
+
+  
+    this.setSecret = function(s) {
+        secret = s;
+    }
+
+    this.getSecret = function() {
+        return secret;
+    }
+}
+
+Person.prototype.spillSecret = function() 
+{ 
+alert(this.getSecret()); 
+};

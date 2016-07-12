@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="demo"></p>
+
+<script>
+function person(first, last, hair) {
+    this.firstName = first;
+    this.lastName = last;
+   this.hair=hair;
+}
+var person1 = new person("Nikshitha", "Nagelly" , "brown");
+var person2 = new person("Gouthami", "Nagelly" , "brown");
+document.getElementById("demo").innerHTML =
+ person1.hair + has same hair color as + person2.hair;
+</script>
+
+</body>
+</html>
