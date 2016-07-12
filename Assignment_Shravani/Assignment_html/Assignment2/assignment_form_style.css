@@ -1,0 +1,10 @@
+#lblFirstName, lblLastName{
+    
+}
+input[type="text"], input[type = "number"]{
+    width: 100%;
+    border: 2px solid black;
+    margin: 5px;
+    border-radius: 5px;
+    
+}

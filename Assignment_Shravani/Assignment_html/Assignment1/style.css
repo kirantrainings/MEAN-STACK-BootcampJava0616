@@ -6,9 +6,10 @@ table,td{
     font-size: 18px;
 }
 
-.row-header{
+#row-header{
     font-weight: bold;
     text-align: center;
+    
 }
 
 #lblText{

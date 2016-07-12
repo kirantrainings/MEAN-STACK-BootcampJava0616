@@ -1,0 +1,41 @@
+body{
+    background-image: url(background.png);
+    background-repeat: repeat-x;
+}
+.wrapper{
+    margin-left: 187px;
+    margin-right: 185px;
+    border: 1px dotted black;
+    text-align: center;
+}
+.main {
+    border: 2px solid #585858;
+    float: right;
+    width: 700px;
+    margin-right: 15px;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+.menu {
+    float:left;
+    border: 2px solid #585858;
+    margin-left: 20px;
+    text-align: left;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    width: 150px;
+}
+
+.copyright{
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+    clear: both;
+}
+
+.large-font{
+    font-size: 20px;
+    font-weight: bold;
+}
