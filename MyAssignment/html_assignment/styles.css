@@ -1,0 +1,66 @@
+table {
+    border: 2px solid gray;
+    margin: auto 100px;
+    background-color: lightblue;
+    border-collapse: separate;
+}
+td {
+    border: 1px solid black;
+    margin-top: 0px;
+    vertical-align: top;
+}
+<<<<<<< HEAD:MyAssignment/html_assignment/styles.css
+
+
+=======
+td:nth-child(2) h2 {
+    border: 1px solid gray;
+    margin-top: -131px;
+}
+>>>>>>> a6ef84710ac958a4ec53c52fd209653ec444f05f:html_assignment/styles.css
+.heading {
+    border: 2px solid red;
+    margin-top: 0px;
+}
+<<<<<<< HEAD:MyAssignment/html_assignment/styles.css
+
+=======
+img:before,
+img:after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    clear: both;
+}
+>>>>>>> a6ef84710ac958a4ec53c52fd209653ec444f05f:html_assignment/styles.css
+div {
+    background-color: orange;
+    font-style: italic;
+<<<<<<< HEAD:MyAssignment/html_assignment/styles.css
+    color: white;
+    
+ 
+=======
+    font-size: 14px;
+    clear: both;
+>>>>>>> a6ef84710ac958a4ec53c52fd209653ec444f05f:html_assignment/styles.css
+}
+p {
+    font-style: italic;
+    font-size: 14px;
+}
+textarea {
+    resize: none;
+    display: block;
+    border-radius: 4px;
+}
+.names {
+    display: block;
+}
+label {
+    font-weight: bold;
+}
+ul li {
+    font-weight: bold;
+}
