@@ -1,0 +1,36 @@
+/*Tag based Styling*/
+
+body {
+    background-color: azure;
+}
+label {
+    font-size: 25px;
+}
+
+/*class based styling*/
+
+#lblFirstName {
+    font-weight: bold;
+    font-size: 12px;
+}
+.lbl-medium {
+    font-size: 18px;
+}
+.lbl-small {
+    font-size: 12px;
+}
+.lbl-large {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*Id based style*/
+
+table,
+tr,
+td,
+label {
+    border: 1px dotted black;
+    padding: 10px;
+    margin: 10px;
+}
