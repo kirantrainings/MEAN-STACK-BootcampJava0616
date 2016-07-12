@@ -36,24 +36,6 @@ function buildStatesOptionTag(states) {
     console.log(optionTag);
 }
 
-/*function bindStates() {
-    var control = controls().countries;
-    var states = buildStates();
-    control.addEventListener("click", function () {
-        var options = control.querySelectorAll("option");
-        var count = options.length;
-        if (typeof (count) == "undefined" || count < 1) {
-            buildCountries();
-        }
-
-    });
-    control.addEventListener("change", function () {
-        if (control.value == "United States") {
-            buildStates();
-        }
-
-    });
-}*/
 
 function buildOptionTag(country) {
     var optionTag = document.createElement("option");
@@ -71,7 +53,6 @@ function bindEvents() {
 
 function initializePage() {
     buildCountries();
-    //bindStates();
     bindEvents();
 
 }
