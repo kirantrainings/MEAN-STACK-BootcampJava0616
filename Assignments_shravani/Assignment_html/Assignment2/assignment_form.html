@@ -1,0 +1,38 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="assignment_form_style.css"> 
+        
+    </head>
+    
+    
+    <body>
+        <table style="margin:auto" >
+            <tr>
+                <label id="lblFirstName"><td>Firstname: </td></label>
+                <td><input type="text" id="fname"></td>
+            </tr>
+            <tr>
+                <label id="lblLastName"><td>Lastname: </td> </label>
+                <td><input type="text" id="lname"></td>
+            </tr>
+            <tr>
+                <label id="lblAge"><td>Age: </td> </label>
+                <td><input type="number" id="age"></td>
+            </tr>
+            <tr>
+                <label id="lblGender"> <td>Gender: </td></label>
+                <td><input type="radio" id="gender" value="female">Female
+                    <input type="radio" id="gender" value="male">Male
+                </td>
+            <tr>
+                <td>
+                <button onclick="change()">Change</button>
+                    <script src = "change.js"></script>
+                </td>
+            </tr>       
+        </table>
+        
+        
+    </body>
+    
+</html>
