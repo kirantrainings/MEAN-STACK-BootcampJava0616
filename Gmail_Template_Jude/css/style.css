@@ -1,5 +1,4 @@
-/* Sticky footer styles
--------------------------------------------------- */
+
 html {
   position: relative;
   min-height: 100%;
@@ -29,17 +28,13 @@ body > .container {
   padding-left: 15px;
 }
 
-/* Sticky footer styles -------------------------------------------------- */
 
-
-/*****navbar *****/
-/* navbar */
 .navbar-default {
     background-color: #F8F9F9;
     border-color: #000000;
     font-family:Droid Sans;
 }
-/* title */
+
 .navbar-default .navbar-brand {
     color: #fff;
     font-family:Droid Sans;
@@ -48,7 +43,7 @@ body > .container {
 .navbar-default .navbar-brand:focus {
     color: #fff;
 }
-/* link */
+
 .navbar-default .navbar-nav > li > a {
     color: #fff;
 }
@@ -68,7 +63,7 @@ body > .container {
     color: #555;
     background-color: #D5D5D5;
 }
-/* caret */
+
 .navbar-default .navbar-nav > .dropdown > a .caret {
     border-top-color: #fff;
     border-bottom-color: #fff;
@@ -84,7 +79,7 @@ body > .container {
     border-top-color: #555;
     border-bottom-color: #555;
 }
-/* mobile version */
+
 .navbar-default .navbar-toggle {
     border-color: #DDD;
 }
@@ -104,7 +99,7 @@ body > .container {
         color: #333;
     }
 }
-/*****navbar *****/
+
 
 .chk-read{margin: 0px;padding:0px !important;}
 .btn-chk{padding-top:4px;padding-bottom:4px;}
