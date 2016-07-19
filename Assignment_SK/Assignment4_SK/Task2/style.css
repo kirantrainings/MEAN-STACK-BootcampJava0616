@@ -1,0 +1,15 @@
+#idfirstName    {
+    
+    float:left;
+    
+}
+
+#id
+#register {
+            width:500px;
+            padding: 10px;
+            border: 2px solid;
+        }    
+input , select {
+           margin: 10px; 
+        }
