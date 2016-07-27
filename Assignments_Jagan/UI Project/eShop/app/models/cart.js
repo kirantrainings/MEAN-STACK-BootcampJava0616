@@ -7,6 +7,4 @@ var cart = new Schema({
     
 });
 
-
-
 module.exports= mongoose.model("cart",cart);

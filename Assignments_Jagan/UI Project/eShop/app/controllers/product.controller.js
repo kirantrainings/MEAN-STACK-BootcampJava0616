@@ -7,7 +7,7 @@ controller.createProduct = function (req, res) {
     var productModel = new Product(product);
     productModel.save(function (err, data) {
         if (err) {
-            res.send("Error Occurred");
+            res.send("Error");
         } else {
             res.send("product Created")
         }
@@ -17,7 +17,7 @@ controller.createProduct = function (req, res) {
 controller.getProducts = function (req, res) {
     Product.find({}, function (err, data) {
         if (err) {
-            res.send("error occured");
+            res.send("Error");
         } else {
             res.send(data);
         }

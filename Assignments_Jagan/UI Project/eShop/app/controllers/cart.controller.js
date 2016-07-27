@@ -8,24 +8,18 @@ controller.createCart = function (req, res) {
     var cartModel = new Cart(cart);
     cartModel.save(function (err, data) {
         if (err) {
-            res.send("Error Occurred");
+            res.send("Error");
         } 
         else {
             res.send("cart created")
         }
-        
-     /*  if(Prod.productName == Cart.productName){
-            res.send("product Created");
-        } else {
-            res.send("product doesn't exist");
-        }*/
     });
 };
 
 controller.getCart = function (req, res) {
     Cart.find({}, function (err, data) {
         if (err) {
-            res.send("error occured");
+            res.send("error");
         } else {
             res.send(data);
         }
