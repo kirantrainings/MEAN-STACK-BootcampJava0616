@@ -1,0 +1,28 @@
+<html ng-app="eShop">
+
+<head>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <!--  <link href="css/register.css" rel="stylesheet">-->
+    <link rel="icon" href="images/Eshop.png">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+</head>
+
+<body>
+    <div class="container" ng-controller="mainCtrl">
+        <div ng-include="templates.navbarUrl"></div>
+        <div ng-include="contentUrl"></div>
+        <div ng-include="templates.footerUrl"></div>
+    </div>
+    <script src="app/modules/modules.js"></script>
+
+    <script src="app/register/registerCtrl.js"></script>
+    <script src="app/register/registerSvc.js"></script>
+
+    <script src="app/app.js"></script>
+</body>
+
+</html>
