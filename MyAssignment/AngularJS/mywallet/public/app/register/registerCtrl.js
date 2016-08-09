@@ -3,8 +3,14 @@
         .controller("registerCtrl", ["$scope", "registerSvc", function ($scope, registerSvc) {
             $scope.user = {};
 
-            $scope.countries = registerSvc.getCountries();
-            console.log($scope.countries);
+            registerSvc.getCountries().then(function(response){
+                $scope.countries = response;
+                
+            }).catch(function(){
+                
+                $scope.showError = true;
+            });
+            //console.log($scope.countries);
 
             $scope.register = function () {
                 registerSvc.registerUser($scope.user);

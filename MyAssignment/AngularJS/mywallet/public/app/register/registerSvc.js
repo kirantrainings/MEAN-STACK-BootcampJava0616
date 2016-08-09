@@ -1,29 +1,23 @@
 (function () {
     angular.module("register")
-        .service("registerSvc", ["$http", function ($http) {
+        .service("registerSvc", ["$http", "$q" , function ($http, $q) {
             this.getCountries = function () {
                 var countryList = [];
-        /*        var countryList = [{
-                        name: "India",
-                        code: "IN"
-            },
-                    {
-                        name: "United States",
-                        code: "US"
-            }];*/
+                 var dfd = $q.defer();
                 var url = "/api/getCountries";
                 $http.get(url)
                 .then(function(response){
                     console.log(response);
                     countryList.push(response);
-                    //console.log(countryList);
-                    return countryList;
+                    dfd.resolve(response.data);
                 })
                 .catch(function(response) {
                     console.log(response);
+                    dfd.reject("Error Occured");
                 });
-               // console.log(countryList);
-                return countryList;
+               
+
+                return dfd.promise;
             };
 
             this.registerUser = function (data) {
