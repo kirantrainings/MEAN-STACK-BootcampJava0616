@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Simple Page</title>
+    <link rel="stylesheet" href="simple.css" />
+</head>
+
+<body>
+    
+    <table class ="tblmanu">
+    
+    <tr>   
+        <td>
+                <p class ="tblmanu" style="margin-bottom:3px;text-align: center"><b>Form Below</b></p>
+            <div class ="tblmanu">
+                <label> First Name </label><input class="elmanu" type="textbox" /><br>
+                <label> Last Name </label><input class="elmanu" type="textbox" /><br>
+                <textarea class="elmanu" rows="10" cols="25">let me put something as default value </textarea><br><br>
+                <b>Please select your gender</b><br>
+                <label>Male:</label><input type="radio" name="gender"/><br>
+                <label>Female:</label><input type="radio" name="gender"/><br>
+                <label>Other:</label><input type="radio" name="gender"/><br>
+                <fieldset>
+                    <legend>lemme group your personal preferences seperately</legend>
+                    <b>I want to know your hobbies</b><br>
+                    <label>Travelling</label><input type="checkbox" name="hobbies"/>
+                    <label>Partying</label><input type="checkbox" name="hobbies"/>
+                    <label>Reading</label><input type="checkbox" name="hobbies"/><br><br>
+                    <b>I want to know your hobbies</b><br>
+                    <select class="elmanu">
+                        <option>Smile</option>
+                    </select>
+                </fieldset>
+                <input class="elmanu" type="submit" value="mySubmit"><br><br>
+            </div>
+        </td>
+        <td > 
+            <p  class ="tblmanu" style="margin-bottom:3px; text-align: center"> <b>Image and List</b></p>    
+            <div class ="tblmanu" style="height:476px">    
+               
+                <img src="images/image.jpg" style="height:98px ; width :94px"><br><br>
+                <label style="background-color: rgb(236, 122, 64)">see the list of languages and frameworks as subcategories.</label><br>
+                Frameworks also have categories<br>
+                <ul>
+                    <li>
+                        PHP
+                        <ul>
+                            <li>YII Framework</li>
+                        </ul>
+                    </li>
+                    <li>
+                        JavaScript
+                        <ul>
+                            <li>AngularJS</li>
+                            <li>
+                                BackboneJS
+                                <ul>
+                                    <li>MorionetteJS</li>
+                                    <li>Thorax</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        Python
+                        <ul>
+                            <li>DjangoJS</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </td>
+        
+    </tr>
+    </table>
+</body>
+
+</html>
