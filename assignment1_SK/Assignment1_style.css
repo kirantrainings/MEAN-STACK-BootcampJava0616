@@ -1,0 +1,49 @@
+table {
+    border-style: ridge;
+    border-width: thin;
+}
+
+
+#colOnehead, #colTwoHead {
+            
+     border-width: thin;
+     border-style: solid;
+
+   
+        }
+
+#colOneBody, #colTwoBody    {
+    border-width: thin;
+    border-style: solid;
+    
+}
+
+#colOneHead, #colTwoHead    {
+    text-align: center;
+    
+}
+#colTwo {
+    vertical-align: top;
+}
+
+#ColOneBody{
+    margin-top: 2px;
+}
+#colTwoBody {
+     height: 445px;
+     margin-top: 2px;
+}
+
+fiel
+
+span {
+    font-weight: bold;
+    
+}
+img {
+    width: 200px;
+    height: 100px;
+    margin-top: px;
+  
+}
+    

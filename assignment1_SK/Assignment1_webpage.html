@@ -1,0 +1,91 @@
+<html>
+
+<head>
+    
+    <link rel="stylesheet" href="Assignment1_style.css" />
+</head>
+    
+<body>
+    <table >
+    
+        <tr >
+                        
+            <td id="colOne">
+                
+            <div id="colOneHead" >
+                <label><b>Form Below</b></label>
+            </div>
+                
+            <div id="colOneBody">
+                <form method="post" >
+                    <label>Firstname </label>
+                    <input type="text" id="txtFirstname"><br />
+                    <label>LastName </label>
+                    <input type="text" id="txtLastname"><br />
+                    <textarea rows="10" cols="40">lets put something as default value</textarea>
+                    <br/>
+                    <label><span>Please select your gender</span></label><br />
+                    <label>Male:</label>
+                    <input type="radio"/><br />
+                    <label>Female:</label>
+                    <input type="radio"/><br />
+                    <label>Other:</label>
+                    <input type="radio"/><br />
+                    <fieldset>
+                        <legend>Lemme group your person preferences separately</legend>
+                        <span>I want to know your hobbies</span><br />
+                        <label>Travelling <input type="checkbox" > Partying <input type="checkbox"> Reading <input type="checkbox"> </label> <br><br>
+                        <span>Lets know your current expression</span>
+                        <br />
+                        <select>
+                            <option >Smile</option>
+                        </select><br>
+                    </fieldset>
+                    <input type="submit" value="mySubmit"><br>
+                </form>
+            </div>
+                
+            </td>
+            
+            
+            <td id="colTwo">
+                
+            <div id="colTwoHead">
+                <label><b>Image and list</b></label>
+            </div>
+                
+            <div  id = "colTwoBody" >
+            <img src="pizza.jpg">
+            <br />
+            <br/>
+            <label style="font-style: italic;background-color: orange; ">see the list of languages and frameworks as their subcategories</label><br>
+            <label style="font-style:italic ">Frameworks also have categories</label>
+            <br>
+            <ul>    
+                <li>PHP </li>
+                <ul>
+                    <li>YII Framework</li>
+                </ul>
+                <li>Javascript </li>
+                <ul>
+                    <li> AngularJS</li>
+                    <li> BackboneJS</li>
+                    <ul>
+                        <li>Marionettejs</li>
+                        <li>Thorax</li>
+                    </ul>
+                </ul>
+                <li>Python</li>
+                <ul>
+                    <li>Django</li>
+                </ul>
+            </ul>
+            </div>  
+                
+            </td>
+            
+        </tr>
+    </table>
+    
+    </body>
+</html>
